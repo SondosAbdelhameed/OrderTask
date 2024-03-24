@@ -6,7 +6,7 @@
     6- run "composer install"
     7- run "php artisan migrate:fresh --seed"
     8- run "php artisan serve"
-    9- import postman collection to test apis - attatched with project in "postman" folder
+    9- import postman collection to test apis - attatched with project in "postman" folder or in mail attatchmebts
     10- add new environmint to 
         base_url => "http://127.0.0.1:8000/api"
         token => the access token that return after login
