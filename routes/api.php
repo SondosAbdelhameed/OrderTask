@@ -2,9 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\QueryController;
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,9 +35,4 @@ Route::prefix('auth')->group(function () {
 
 Route::middleware('jwt')->group(function () {
     Route::resource('products',ProductController::class);
-});
-
-Route::prefix('query')->group(function () {
-    Route::get('q1',[QueryController::class,'query1']);
-    Route::get('q2',[QueryController::class,'query2']);
 });
